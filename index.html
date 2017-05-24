@@ -77,30 +77,44 @@
     <!-- Intro Header -->
     <header class="intro">
         <div class="intro-body">
-            <div class="main-div">
-                <h4 style="text-align: center; width: 100%;">
-                    <span id="city">Processing the</span><span>, </span><span id="state"></span> weather
-                </h4>
-                <div class="left-div" style="text-align:left; height: 100px">
-                    <br>
-                    <ul style="text-align: left; font-size: 14px;">
-                        <li>Temp. <span id="temperature">...</span>&#176<span id="temp-units"></span></li>
-                        <li>Dew Point <span id="dew-point">...</span>&#176<span id="dew-point-units"></span></li>
-                        <li><span id="weather-condition">Condition...</span></li>
-                    </ul>
+            <div class="container text-center">
+                
+                <div class="row">
+                    <div class="col-xs-0 col-sm-1 col-md-2 col-lg-3"></div>
+                    <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6" style="vertical-align: middle; margin-bottom: 50px;">
+                        <h3><span id="city">Processing..</span><span>, </span><span id="state"></span></h3>
+                    </div>
+                    <div class="col-xs-0 col-sm-1 col-md-2 col-lg-3"></div>
                 </div>
-                <div class="left-div" style="height: 100px;">
-                    <span id="img-html"></span>
+                
+                <div class="row">
+                    <div class="col-xs-0 col-sm-1 col-md-3 col-lg-4"></div>
+                    <div class="col-xs-6 col-sm-5 col-md-3 col-lg-2" >
+                        <ul style="text-align: left; font-size: 16px; vertical-align: top;">
+                            <li>Temp. <span id="temperature">...</span>&#176<span id="temp-units"></span></li>
+                            <li>Dew Point <span id="dew-point">...</span>&#176<span id="dew-point-units"></span></li>
+                            <li><span id="weather-condition">Condition...</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-5 col-md-3 col-lg-2">
+                        <span id="img-html" style="vertical-align: top;"></span>
+                    </div>
+                    <div class="col-xs-0 col-sm-1 col-md-3 col-lg-4"></div>
                 </div>
-                <div class="left-div" style="height: 30px;">
-                    <a href="https://darksky.net/poweredby/" style="font-size:10px;">Powered by Dark Sky</a>
+                
+                <div class="row">
+                    <div class="col-xs-0 col-sm-1 col-md-3 col-lg-4"></div>
+                    <div class="col-xs-6 col-sm-5 col-md-3 col-lg-2" >
+                        <a href="https://darksky.net/poweredby/" style="font-size:10px; margin: 20px;">Powered by Dark Sky</a>
+                    </div>
+                    <div class="col-xs-6 col-sm-5 col-md-3 col-lg-2">
+                        <a href="https://icons8.com/download-huge-windows8-set" style="font-size: 10px; margin: 20px;"> Windows icons by Icons8</a>
+                    </div>
+                    <div class="col-xs-0 col-sm-1 col-md-3 col-lg-4"></div>
                 </div>
-                <div class="right-div" style="height: 30px;">
-                    <a href="https://icons8.com/download-huge-windows8-set" style="font-size: 10px;"> Windows icons by Icons8</a>
-                </div>
-               
+                            
                 <div>
-                    <a onclick="convertTempUnits()" class="btn btn-default btn-lg">
+                    <a onclick="convertTempUnits()" class="btn btn-default btn-lg" style="margin: 20px">
                         <i class="fa fa-refresh fa-fw"></i> <span class="network-name">Change Units</span>
                     </a>
                 </div>
@@ -109,24 +123,20 @@
     </header>
 
     <!-- About Section -->
-    <section id="about" class="container content-section text-center">
-        <div class="row main-div"">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h3>About this site</h3>
-                <p>Your local weather upon loading the site.  With a click, change the units to your liking.</p>
-                <p>A <a href="https://www.freecodecamp.com/">Free Code Camp</a> project to display to first use of Javascript competency.</p>
-
-            </div>
+    <section id="about" class="content-section text-center">
+         <div class="container text-center">
+            <h3>About this site</h3>
+            <p>Your local weather upon loading the site.  With a click, change the units to your liking.</p>
+            <p>A <a href="https://www.freecodecamp.com/">Free Code Camp</a> project to display to first use of Javascript competency.</p>
         </div>
     </section>
 
     <!-- Developer -->
     <section id="contact" class="content-section text-center">
         <div class="download-section">
-            <div class="container">
-                <div style="width: 400px; margin: auto;">
-                    <h3>Developer Contact</h3>
-                    <ul class="list-inline banner-social-buttons">
+            <div class="container text-center">
+                <h3>Developer Contact</h3>
+                <ul class="list-inline banner-social-buttons">
                     <li>
                         <a href="mailto:EricBenz@gmail.com?Subject=Liberty%20Quotes"" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-envelope-o"></i> <span class="network-name">eMail</span></a>
                     </li>
@@ -134,24 +144,19 @@
                         <a href="https://github.com/eBenzen/" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                     </li>
                 </ul>
-                </div>
             </div>
         </div>
     </section>
 
         <!-- About the theme Section -->
     <section id="theme" class="container content-section text-center">
-        <div class="row">
-            <div class="main-div">
-                <h3>Use this theme</h3>
-                <p>Grayscale, the HTML/CSS theme used for the site, is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.
-                </p>
-                <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.
-                </p>
-                <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.
-                </p>
-            </div>
-        </div>
+        <h3>Use this theme</h3>
+        <p>Grayscale, the HTML/CSS theme used for the site, is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.
+        </p>
+        <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.
+        </p>
+        <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.
+        </p>
     </section>
 
 
